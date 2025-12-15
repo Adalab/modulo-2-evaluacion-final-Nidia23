@@ -1,4 +1,25 @@
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px;
+@use '../core/variables' as vars;
+
+h3{
+  font-size: 1rem;
+  font-family: vars.$font-primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: underline;
+}
+.container-search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  & button, input{
+  border-radius: 5rem;
+  border: 1px solid rgba(1, 1, 1, 0.5);
+  padding: 0.5rem;
+    &:hover{
+      background-color: #F8B500;
+    }
+  
+  }
 }

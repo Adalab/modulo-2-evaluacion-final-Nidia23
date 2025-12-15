@@ -1,5 +1,40 @@
+@use '../core/variables' as vars;
+
 .page__header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 3rem;
+}
+
+.title-hero{
+  font-family: vars.$font-title;
+  font-size: 5rem;
+  color:vars.$color-title;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.header-nav-bar__nav{
+  width: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  text-align: end;
+
+    .nav__list{
+      list-style: none;
+        .option__link{
+          font-size: 1rem;
+          text-decoration: none;
+        }
+    }
+}
+.imgs-pixels{
+    width: 27.4rem;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -0.4rem;
 }
