@@ -1,0 +1,17 @@
+@use '../core/variables' as vars;
+
+#results{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 2rem; 
+}
+.card-anime{
+ display: flex;
+ flex-direction: column;
+ width: 10rem;
+ height: auto;
+ text-align: center;
+ align-items: center;
+}
