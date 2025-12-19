@@ -1,7 +1,7 @@
 @use '../core/variables' as vars;
 
 h3, .title-results, .title-favorite{
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: vars.$font-primary;
   display: flex;
   flex-direction: row;
@@ -9,9 +9,13 @@ h3, .title-results, .title-favorite{
   text-decoration: underline;
      
     &.title-favorite, &.title-results{
+      font-family: vars.$font-title;
+      color: vars.$color-title;
       flex-wrap: wrap;
       margin-top: 2rem;
       text-align: center;
+      border-bottom: 1px solid rgba(1, 1, 1, 0.5);
+      margin-top: 1rem;
     }
 }
 
@@ -35,45 +39,42 @@ h3, .title-results, .title-favorite{
   align-items: flex-start;
   
 
-  .favorites{
-    background-color: #f4b6c2;
-    display:flex;
-    flex-direction: column;
-    width: 40vw;
-    height: auto;
-    border-radius: 1rem;
-    gap:3rem;
+    .favorites {
+      background-color: #f4b6c2;
+      display: flex;
+      flex-direction: column;
+      width: 40vw;
+      border-radius: 1rem;
+      gap: 3rem;
 
-    .favoritos-li{
-      width: 10rem;
-      height: auto;
-      padding: 1,5rem;
-      list-style: none;
+      .favoritos-li {
+        width: 100%;
+        padding: 1.5rem;
+        list-style: none;
 
-      li{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap:2rem;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(1, 1, 1, 0.5);
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          margin-bottom: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid rgba(1, 1, 1, 0.5);
 
-        img{
-          width: 20vw;
-          height: auto;
-          gap: 1,5rem;
-        }
-        name{
-          font-size: 1rem;
-          font-weight: bold;
-          width: 100%;
-          border:1px solid black
+          img {
+            max-width: 150px; // 👈 límite de crecimiento
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+
+          name {
+            flex: 1;
+            font-size: 2rem;
+            font-weight: bold;
+          }
         }
       }
     }
-  }
 }
 
 .container-container{

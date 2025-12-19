@@ -1,10 +1,24 @@
 @use '../core/variables' as vars;
 
 .page__footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100vw;
     padding: 1rem;
     color: vars.$color-secondary;
 }
+    .container-flecha{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        bottom: -4rem;
+        padding-bottom:4rem;
+        
+        .flecha-arriba{
+            border-radius: 2rem;
+            background-color: rgba(255, 0, 0, 0.685);
+            padding: 0.5rem;
+        }
+    }
