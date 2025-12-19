@@ -1,0 +1,10 @@
+.search-btn, .reset-btn, .clear-favorites-btn{
+    cursor: pointer;
+    border-radius: 5rem;
+    border: 1px solid rgba(1, 1, 1, 0.5);
+    font-weight: bold;
+    padding: 0.5rem;
+        &:hover{
+            background-color: #f8b600c7;
+        }
+}

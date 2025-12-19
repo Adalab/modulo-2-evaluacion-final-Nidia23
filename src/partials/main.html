@@ -1,14 +1,26 @@
 <main class="page__main">
  <section>
-  <h3>Busca tu anime favorito</h3><br>
-    <div class="container-search"> 
-      <input type="text" id="search" placeholder="Escribe aquí...">
-      <button type="button" class="button-search">Buscar</button>
-      <button type="reset" class="button-reset">Limpiar</button>
+    <h3>Busca tu anime favorito</h3><br>
+     <div class="container-search">
+        <input type="text" class="search-input" placeholder="Introduce Anime...">
+        <button class="search-btn">Buscar</button>
+        <button class="reset-btn">Reset</button>
     </div>
-    <div id="results">
-      <div class="card-anime">
-      </div>
+
+    <div class="container">
+        <!-- Lista de favoritos -->
+        <div class="favorites">
+            <h2 class="title-favorite">Favoritos</h2>
+            <ul class="favoritos-li"></ul>
+            <button class="clear-favorites-btn">Borrar Favoritos</button>
+        </div>
+
+        <!-- Resultados de búsqueda -->
+         <div class="container-container">
+            <h2 class="title-results">Resultados</h2>
+            <div class="container-results"></div>
+         </div>
+        
     </div>
- </section>
+  </section>
 </main>
